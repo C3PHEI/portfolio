@@ -10,16 +10,16 @@
 <body class="bg-black">
 <div class="relative min-h-[500vh]">
     <!-- Vertikale Linie/ vh lange der linie von 500 / top-% wie hoch oder tief die sein soll -->
-    <div class="absolute left-1/2 transform -translate-x-1/2 top-[13.5%] h-[432.5vh] w-2 bg-white z-10"></div>
+    <div class="absolute left-1/2 transform -translate-x-1/2 top-[13.5%] h-[432.5vh] w-1 bg-white z-10"></div>
 
     <!-- Abschnitt 1 -->
     <div class="absolute inset-0 h-screen">
         <!-- Navigation (ABOUT, WORK, HOBBYS, CONTACT) -->
         <div class="absolute right-0 top-0 flex flex-col items-end pr-12 pt-10 font-teko text-xl text-right font-bold tracking-wider">
-            <div class="text-teal-100">ABOUT</div>
-            <div class="text-teal-100">WORK</div>
-            <div class="text-teal-100">HOBBYS</div>
-            <div class="text-teal-100">CONTACT</div>
+            <button onclick="scrollToSection(1)" class="text-teal-100 hover:text-teal-300">ABOUT</button>
+            <button onclick="scrollToSection(2)" class="text-teal-100 hover:text-teal-300">WORK</button>
+            <button onclick="scrollToSection(4)" class="text-teal-100 hover:text-teal-300">HOBBYS</button>
+            <button onclick="scrollToSection(5)" class="text-teal-100 hover:text-teal-300">CONTACT</button>
         </div>
 
         <!-- Hauptinhalt (Maximilian Läpple und Software Developer) -->
@@ -52,6 +52,7 @@
     <div class="absolute inset-0 h-screen top-[400vh] bg-black flex items-center justify-center">
         <h1 class="text-3xl font-bold text-teal-100">Abschnitt 5</h1>
     </div>
+    <script src="../js/script.js"></script>
 </div>
 </body>
 </html>

@@ -640,6 +640,10 @@ video {
   width: 0.5rem;
 }
 
+.w-1 {
+  width: 0.25rem;
+}
+
 .max-w-\[650px\] {
   max-width: 650px;
 }
