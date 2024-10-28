@@ -7,28 +7,39 @@
     <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Teko:wght@400;700&display=swap" rel="stylesheet">
 </head>
-<body class="bg-black">
+<body class="bg-custom-gray">
 <div class="relative min-h-[500vh]">
     <!-- Vertikale Linie/ vh lange der linie von 500 / top-% wie hoch oder tief die sein soll -->
-    <div class="absolute left-1/2 transform -translate-x-1/2 top-[13.5%] h-[432.5vh] w-1 bg-white z-10"></div>
+    <div class="absolute left-1/2 transform -translate-x-1/2 top-[14.5%] h-[432.5vh] w-1 bg-amber-500 z-10"></div>
 
     <!-- Abschnitt 1 -->
     <div class="absolute inset-0 h-screen">
         <!-- Navigation (ABOUT, WORK, HOBBYS, CONTACT) -->
         <div class="absolute right-0 top-0 flex flex-col items-end pr-12 pt-10 font-teko text-xl text-right font-bold tracking-widest">
-            <button onclick="scrollToSection(1)" class="text-teal-100 hover:text-teal-300">ABOUT</button>
-            <button onclick="scrollToSection(2)" class="text-teal-100 hover:text-teal-300">WORK</button>
-            <button onclick="scrollToSection(4)" class="text-teal-100 hover:text-teal-300">HOBBYS</button>
-            <button onclick="scrollToSection(5)" class="text-teal-100 hover:text-teal-300">CONTACT</button>
+            <button onclick="scrollToSection(1)" class="text-custom-green1 hover:text-custom-green2">ABOUT</button>
+            <button onclick="scrollToSection(2)" class="text-custom-green1 hover:text-custom-green2">WORK</button>
+            <button onclick="scrollToSection(4)" class="text-custom-green1 hover:text-custom-green2">HOBBYS</button>
+            <button onclick="scrollToSection(5)" class="text-custom-green1 hover:text-custom-green2">CONTACT</button>
         </div>
 
         <!-- Hauptinhalt (Maximilian Läpple und Software Developer) -->
-        <div class="absolute inset-x-0 top-[32%] transform -translate-y-1/2 grid grid-cols-1 gap-2 text-center">
-            <div class="font-bebas text-amber-500 text-9xl font-medium tracking-widest max-w-[650px] mx-auto">
+        <div class="absolute inset-x-0 top-[45%] transform -translate-y-1/2 grid grid-cols-1 gap-2">
+            <div class="font-bebas text-amber-500 text-9xl text-center font-medium tracking-widest max-w-[650px] mx-auto">
                 Maximilian Läpple
             </div>
-            <div class="font-teko font-medium tracking-wide text-white text-4xl">
+            <div class="font-teko uppercase tracking-wide text-slate-500 text-4xl text-center">
                 Software developer
+            </div>
+            <div class="font-teko font-normal tracking-wide text-custom-green2 text-xl p-4 max-w-[850px] text-left mx-auto border-4 border-amber-500 rounded-lg bg-custom-gray">
+                Originaire d'Allemagne, vivant actuellement en Suisse et âgé de 21 ans, je fais mon stage pour
+                compléter mon EFZ (apprentissage) en création d'applications.<br>
+                Je suis une personne qui aime être challengée par de nouveaux projets, ayant déjà acquis de l’expérience
+                dans ce domaine.<br>
+                Mon domaine de prédilection est le développement frontend, mais je souhaite également devenir compétent
+                en backend. Je me suis déjà bien informé sur ces deux domaines, car nous avons dû les aborder au cours
+                de mes études en informatique à Bâle.<br>
+                Merci de visiter mon portfolio ! N’hésitez pas à me contacter si vous avez des questions supplémentaires
+                à mon sujet.
             </div>
         </div>
     </div>
