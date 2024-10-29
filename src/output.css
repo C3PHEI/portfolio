@@ -550,8 +550,18 @@ video {
 
 /* Make elements with the HTML hidden attribute stay hidden by default */
 
+
+/* Nur die Scrollbar verstecken */
+::-webkit-scrollbar {
+  display: none;
+}
+
+html, body {
+  overflow: hidden;
+}
+
 .follow-button {
-  transition: transform 0.25s cubic-bezier(0.25, 0.1, 0.25, 1);
+  transition: transform 0.18s cubic-bezier(0.25, 0.1, 0.25, 1);
 }
 
 [hidden]:where(:not([hidden="until-found"])) {
