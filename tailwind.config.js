@@ -9,7 +9,7 @@ module.exports = {
             },
             colors: {
                 'custom-gray': 'rgb(202, 210, 197)',  // Sanftes Grün-Grau
-                'custom-gray2': 'rgb(175,182,167)',  // Sanftes Grün-Grau 2
+                'custom-gray2': 'rgb(177,186,173)',  // Sanftes Grün-Grau 2
                 'custom-green1': 'rgb(132, 169, 140)',  // Hellgrün
                 'custom-green2': 'rgb(82, 121, 111)',   // Mittleres Grün-Blau
                 'custom-green3': 'rgb(53, 79, 82)',     // Dunkles Blau-Grau
