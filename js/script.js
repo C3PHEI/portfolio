@@ -5,7 +5,7 @@ document.addEventListener("DOMContentLoaded", function () {
     // Intersection Observer Optionen
     const observerOptions = {
         root: null,
-        threshold: 0.6, // Aktiviert, wenn 60% des Abschnitts sichtbar sind
+        threshold: 0.6, // sichtbarkeit in %
     };
 
     // Intersection Observer zur Überwachung der Sichtbarkeit der Abschnitte
@@ -30,7 +30,7 @@ document.addEventListener("DOMContentLoaded", function () {
     // Intersection Observer-Optionen
     const observerOptions = {
         root: null,
-        threshold: 0.6, // Aktiviert die Ansicht, wenn 60% des Abschnitts sichtbar sind
+        threshold: 0.6, // Aktiviert die Ansicht, wenn 60 % des Abschnitts sichtbar sind
     };
 
     // Intersection Observer zur Überwachung der Sichtbarkeit der Abschnitte
@@ -64,8 +64,10 @@ document.addEventListener('DOMContentLoaded', () => {
 
     buttons.forEach((button) => {
         let animationFrameId;
-        const sensitivity = 1; // Wert zwischen 0 und 1
-        const maxDistance = 50; // Maximale Verschiebung in Pixeln
+        const sensitivity = 0.6; // Wert zwischen 0 und 1 für sanftere Bewegungen
+        const maxDistance = 80; // Maximale Verschiebung in Pixeln für geringere Bewegung
+
+        const content = button.querySelector('.button-content');
 
         function onMouseMove(event) {
             const mouseX = event.clientX;
@@ -94,7 +96,7 @@ document.addEventListener('DOMContentLoaded', () => {
                 const offsetX = Math.cos(angle) * limitedDistance;
                 const offsetY = Math.sin(angle) * limitedDistance;
 
-                button.style.transform = `translate(${offsetX}px, ${offsetY}px)`;
+                content.style.transform = `translate(${offsetX}px, ${offsetY}px)`;
             });
         }
 
@@ -104,7 +106,7 @@ document.addEventListener('DOMContentLoaded', () => {
 
         button.addEventListener('mouseleave', () => {
             document.removeEventListener('mousemove', onMouseMove);
-            button.style.transform = '';
+            content.style.transform = '';
             if (animationFrameId) {
                 cancelAnimationFrame(animationFrameId);
             }
